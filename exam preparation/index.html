@@ -1,0 +1,208 @@
+<!DOCTYPE html> <!-- Версія html -->
+<html lang="en"> <!-- html файл та мова сторінки -->
+<head> <!-- Дані налаштування -->
+    <meta charset="UTF-8"> <!-- Тип кодування -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Відображення на різних девайсах по ширині вікна, маштаб 100% -->
+    <title>Document</title> <!-- Назва сторінки -->
+    <link rel="stylesheet" href="./style.css"> <!-- Підключення стилів -->
+</head>
+<body> <!-- Вміст контенту -->
+
+<!-- less 1-2 -------------------------------------------------------------------------------->
+
+    <h1>Заголовок 1</h1>
+    <h2>Заголовок 2</h2>
+    <h3>Заголовок 3</h3>
+    <h4>Заголовок 4</h4>
+    <h5>Заголовок 5</h5>
+    <h6>Заголовок 6</h6>
+    <hr> <!--Тег лінія відділяє контент-->
+    <br> <!--Переносить на іншу строку -->
+    <p>параграф</p>
+    <pre>   
+              Реагує на всі символи тексту (відступи, абзаци)
+    </pre>
+    <span>Текст як лінійний тег (ширина свого контенту)</span>
+    <i>Курсивний шрифт</i>
+    <b>Жирний шрифт</b>
+    <strong>Виділений шрифт (жирний)</strong>
+    <br><br>
+
+    <span>Lorem</span> <img> <a>Lorem</a> <i>Lorem</i> <!--Лінійні теги-->
+    <div>Lorem</div> <p>Lorem</p> <h1>Lorem</h1>       <!--Блочні теги-->
+    <br> <hr> <img>                 <!--Одинарні теги-->
+    <p></p> <h1></h1> <a></a>       <!--Подвійні теги-->
+
+<!-- less 3-4 -------------------------------------------------------------------------------->
+
+    <h2>Семантичні теги - для логічного поділу сайта на блоки</h2>
+
+        <article>стаття</article>
+        <cite>назва, підпис</cite>
+        <aside>назва збоку</aside>
+        <abbr title="пояснення">аббревіатура</abbr>
+        <header>шапка сайту</header>
+        <section>секція сайту</section>
+        <nav>навігація</nav>
+        <footer>нижній колонтитул сайту</footer>
+        <div>контейнер</div>
+
+    <br><br>
+    <sup>текст у верхньому індексі</sup>
+    <sub>текст у нижньому індексі</sub>
+
+    <style>
+        nav {
+            border: 1px solid green;
+        }
+    </style>
+    <div style="width: 40px; height: 20px; background-color: aqua;"></div>
+    <p class="style_text">Тут будуть різні стилі для тексту</p>
+
+<!-- less 5-6 -------------------------------------------------------------------------------->
+
+    <span class="m_b_p">Тут будуть стилі по відступам</span>
+
+    <ol type="I" start="2">
+        <li>список</li>
+        <li>список</li>
+        <li>список</li>
+    </ol>
+    <ul class="list">
+        <li>список</li>
+        <li>список</li>
+        <li>список</li>
+    </ul>
+
+    <img alt="cat" src="./img/cat.jpg" width="400">
+    <audio src="" controls></audio>
+    <video src="" controls width="400"></video>
+    <div class="bg-img"></div>
+
+<!-- less 7-8 -------------------------------------------------------------------------------->
+
+    <table border=2>
+        <thead>
+            <tr>
+                <th>шапка</th>
+                <th>шапка</th>
+                <th>шапка</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td colspan="2">4</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>підсумок</th>
+                <th>підсумок</th>
+                <th>підсумок</th>
+            </tr>
+        </tfoot>
+    </table>
+
+<!-- less 9-10 -------------------------------------------------------------------------------->
+
+    <div class="p_fixed"></div>
+    <div class="p_relative"></div>
+    <div class="p_absolute"></div>
+    <div class="p_float"></div>
+
+    <p class="over">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem sed nobis fugit maxime minus, 
+        doloremque, voluptas voluptatibus aperiam beatae iusto architecto repellat. Nam omnis quod unde 
+        incidunt repellendus doloremque! Earum atque asperiores suscipit quisquam et corporis laborum 
+        sed dolore? Molestias eveniet beatae nulla veritatis distinctio fugit iusto hic reiciendis maxime, 
+        architecto similique itaque magnam at a, natus qui dicta?
+    </p>
+
+    <i style="display: block;">Text</i><i style="display: block;">Text</i>
+    <p style="display: inline;">Text</p><p style="display: inline;">Text</p>
+
+<!-- less 13-14 -------------------------------------------------------------------------------->
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <div class="flex-container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+
+<!-- less 15-16 -------------------------------------------------------------------------------->
+
+    <div class="grid-container">
+        <div id="column">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+<!-- less 17-18 -------------------------------------------------------------------------------->
+
+    <form action="./" method="get">
+        <input type="text" placeholder="First Name" id="first-name" required> 
+            <label for="first-name">First Name</label> 
+        <br><br>
+        <input type="text" placeholder="Last Name" id="last-name" required>
+            <label for="last-name">Last Name</label> 
+        <br><br>
+        <input type="email" placeholder="email" id="email" required>
+            <label for="email">Your email</label>
+        <br><br>
+        <input type="password" placeholder="password" id="password" required>
+            <label for="password">Your password</label>
+        <hr>
+
+            <label>Sex</label>
+        <input type="radio" name="sex" id="woman">
+            <label for="woman">Woman</label>
+        <input type="radio" name="sex" id="man">
+            <label for="man">Man</label>
+        <br>
+
+        <label>Select</label>
+        <input type="checkbox" id="c1">
+        <label for="c1">1</label>
+        <input type="checkbox" id="c2">
+        <label for="c2">2</label>
+        <input type="checkbox" id="c3">
+        <label for="c3">3</label>
+        <br><br>
+
+        <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+        <textarea cols="50" rows="10" placeholder="text"></textarea>
+        <label>Your text</label>
+        <br>
+        
+        <input type="submit">
+    </form>
+  
+
+</body>
+</html>
